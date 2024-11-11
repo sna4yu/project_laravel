@@ -42,7 +42,7 @@ class DataController extends Controller
                         __('quickbooks::lang.quickbooks'),
                         ['icon' => 'fas fa-chart-line', 'active' => request()->segment(1) == 'quickbooks' || request()->get('type') == 'quickbooks', 'style' => config('app.env') == 'demo' ? 'background-color: #e4186d !important;color:white' : '']
                     )
-                        ->order(86);
+                        ->order(202);
                 }
             );
         }

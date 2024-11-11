@@ -1,4 +1,4 @@
-<div class="modal-fullscreen" role="document">
+<div class="modal-dialog" role="document">
     <div class="modal-content">
         <!-- Modal Header -->
         <div class="modal-header">
@@ -117,7 +117,9 @@ function printDiv(divName) {
     document.body.innerHTML = printContents;
     window.print();
     document.body.innerHTML = originalContents;
-    $('.modal').modal('hide'); // This might be a better approach if the reload isn't necessary.
-}
+    $('.modal').modal('hide');
 
+    // Redirect to KPI appraisal list page after printing
+    window.location.href = '/kpi/appraisal-list'; // Update this URL based on your routing
+}
 </script>

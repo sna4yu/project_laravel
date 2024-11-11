@@ -579,11 +579,11 @@ class IndicatorController extends Controller
             }
 
             DB::commit();
-            return redirect()->route('indicator.index')->with('success', 'Appraisal saved successfully.');
+            return redirect()->route('appraisal.list')->with('success', 'Appraisal saved successfully.');
         } catch (\Exception $e) {
             DB::rollBack();
             \Log::error('Error saving appraisal score: ' . $e->getMessage());
-            return redirect()->route('indicator.index')->with('error', 'Error saving appraisal score.');
+            return redirect()->route('appraisal.list')->with('error', 'Error saving appraisal score.');
         }
     }
 
