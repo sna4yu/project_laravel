@@ -1,0 +1,11 @@
+{
+    "name": "SocialManagement",
+    "alias": "socialmanagement",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\SocialManagement\\Providers\\SocialManagementServiceProvider"
+    ],
+    "files": []
+}

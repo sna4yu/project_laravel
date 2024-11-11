@@ -1,0 +1,17 @@
+{
+    "name": "Quickbooks",
+    "alias": "quickbooks",
+    "priority": 0,
+    "description": "Quickbooks Management Module",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\Quickbooks\\Providers\\QuickbooksServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        
+    ],
+    "requires": []
+}

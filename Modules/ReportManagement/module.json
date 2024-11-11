@@ -1,0 +1,11 @@
+{
+    "name": "ReportManagement",
+    "alias": "reportmanagement",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\ReportManagement\\Providers\\ReportManagementServiceProvider"
+    ],
+    "files": []
+}

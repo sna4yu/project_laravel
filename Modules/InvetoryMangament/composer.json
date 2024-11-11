@@ -1,0 +1,25 @@
+{
+    "name": "abdelazizdev/invetorymangaments",
+    "description": "لادارة وجرد المخزون",
+    "authors": [
+        {
+            "name": "Abdelaziz Ibrahim",
+            "email": "zeseoudi@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\InvetoryMangaments\\Providers\\InvetoryMangamentServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\InvetoryMangaments\\": ""
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "name": "InvetoryMangament",
+    "alias": "invetorymangament",
+    "description": "لادارة وجرد المخزون",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\InvetoryMangament\\Providers\\InvetoryMangamentServiceProvider"
+    ],
+    "files": []
+}
