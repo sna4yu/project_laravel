@@ -66,6 +66,7 @@
                 <table class="table table-bordered table-striped ajax_view" id="sell_table" style="width: 100%;">
                     <thead>
                         <tr>
+                            <th>#</th>
                             <th>@lang('messages.action')</th>
                             <th>@lang('messages.date')</th>
                             <th>@lang('sale.invoice_no')</th>
@@ -194,10 +195,20 @@
                 scrollX: true,
                 scrollCollapse: true,
                 columns: [{
+                        data: null,
+                        name: 'id',
+                        orderable: false,
+                        searchable: false,
+                        render: function(data, type, row, meta) {
+                            return meta.row + meta.settings._iDisplayStart + 1;
+                        }
+                    }, 
+                     {
                         data: 'action',
                         name: 'action',
                         orderable: false,
                         "searchable": false
+                        
                     },
                     {
                         data: 'transaction_date',
